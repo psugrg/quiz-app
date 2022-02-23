@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="/quiz.js"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <p>
+      Question: <span id="arg_1"></span> + <span id="arg_2"></span> =
+      <input type="number" id="answ" placeholder="your answer" />
+      <button onclick="answerQuestion();">Submit</button>
+      <br />
+      <script>
+        getQuestion();
+      </script>
+    </p>
+  </body>
+</html>
