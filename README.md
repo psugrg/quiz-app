@@ -7,4 +7,4 @@ This means that the application is a monolith and doesn't have any sophisticated
 
 ## Architecture
 
-TODO: add image here
+![Architecture diagram](/diagram.JPG)
