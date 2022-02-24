@@ -1,4 +1,3 @@
-from threading import local
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -21,7 +20,7 @@ class Quiz(BaseModel):
 
 
 @app.post("/answer/")
-async def quiz(answer: Quiz):
+async def answer(answer: Quiz):
     if (answer.arg_1 + answer.arg_2) == answer.answer:
         print("Good answer!")
         return {"result": True}
@@ -31,7 +30,7 @@ async def quiz(answer: Quiz):
 
 
 @app.get("/quiz")
-async def test():
+async def quiz():
     return {"arg_1": randint(0, 10), "arg_2": randint(0, 10)}
 
 
