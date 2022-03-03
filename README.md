@@ -8,3 +8,13 @@ This means that the application is a monolith and doesn't have any sophisticated
 ## Architecture
 
 ![Architecture diagram](/diagram.JPG)
+
+## Docker
+
+### Build
+
+`docker build -t quiz-app .`
+
+### Run
+
+`docker run -dp 8080:8080 quiz-app`
