@@ -18,3 +18,7 @@ This means that the application is a monolith and doesn't have any sophisticated
 ### Run
 
 `docker run -dp 8080:8080 quiz-app`
+
+## Dodo's & Open Points
+
+- Uvicorn is probably not a part of the application therefore it could be removed from the Poetry toml file
